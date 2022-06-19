@@ -1,10 +1,10 @@
-# it-pushable
+# it-pushable2
 
-[![Build Status](https://github.com/alanshaw/it-pushable/actions/workflows/js-test-and-release.yml/badge.svg?branch=master)](https://github.com/alanshaw/it-pushable/actions/workflows/js-test-and-release.yml)
-[![Dependencies Status](https://david-dm.org/alanshaw/it-pushable/status.svg)](https://david-dm.org/alanshaw/it-pushable)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+> An commonjs version of it-iterable
 
-> An iterable that you can push values into
+## Notes
+
+Copied from https://github.com/alanshaw/it-pushable and make the module type as commonjs.
 
 ## Install
 
@@ -15,7 +15,7 @@ npm install it-pushable
 ## Usage
 
 ```js
-import { pushable } from 'it-pushable'
+import { pushable } from 'it-pushable2'
 
 const source = pushable()
 

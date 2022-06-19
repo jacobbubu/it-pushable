@@ -362,7 +362,6 @@ describe('it-pushable', () => {
   it('should throw if passed an object when objectMode is false', async () => {
     const source = pushable()
 
-    // @ts-expect-error incorrect argument type
     expect(() => source.push('hello')).to.throw().with.property('message').that.includes('tried to push non-Uint8Array value')
   })
 })

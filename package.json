@@ -1,8 +1,7 @@
 {
-  "name": "it-pushable",
+  "name": "it-pushable2",
   "version": "3.0.0",
   "description": "Pushable iterable",
-  "type": "module",
   "types": "./dist/src/index.d.ts",
   "files": [
     "src",
@@ -10,11 +9,7 @@
     "!dist/test",
     "!**/*.tsbuildinfo"
   ],
-  "exports": {
-    ".": {
-      "import": "./dist/src/index.js"
-    }
-  },
+  "main": "dist/src/index.js",
   "eslintConfig": {
     "extends": "ipfs",
     "parserOptions": {

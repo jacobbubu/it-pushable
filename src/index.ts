@@ -33,8 +33,8 @@ export interface BytePushableOptions extends Options {
   objectMode?: false
 }
 
-export function pushable (options?: BytePushableOptions): Pushable<Uint8Array>
-export function pushable<T> (options: ObjectPushableOptions): Pushable<T>
+export function pushable (options: BytePushableOptions): Pushable<Uint8Array>
+export function pushable<T> (options?: ObjectPushableOptions): Pushable<T>
 export function pushable<T> (options: Options = {}): Pushable<T> {
   const getNext = (buffer: FIFO<T>): NextResult<T> => {
     const next: Next<T> | undefined = buffer.shift()
